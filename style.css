@@ -1,0 +1,73 @@
+body {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+    background: url("images/fantasy_background.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+	color: #fff;
+}
+
+.container {
+    position: relative;
+}
+
+header.jumbotron {
+    background: forestgreen;
+    background-opacity: .6;
+	border-radius: 24px;
+}
+
+p {
+    font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+    padding-top: 10px;
+	font-size: 18px;
+}
+
+
+h1 {
+  font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+  text-align: center;
+  font-size: 150px;
+}
+	/* font-style: bold;
+	font-size: 22px;
+	position: relative;
+	letter-spacing: 8px;
+} */
+
+h3 {
+	padding-right: 10px;
+    padding-bottom: 10px;
+    font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+
+}
+
+.forest {
+	background: black;
+	border-radius: 12px;
+	color: white;
+	font-style: Courier New;
+	font-size: 15px;
+	padding: 10px;
+	margin: 5px;
+	margin-top: 20px;
+}
+
+#animal-form {
+    text-align: right;  
+}
+
+
+input#animal-input {
+	color: #000;
+}
+
+input#add-animal.btn,btn-deafult {
+	color: #000;
+}
