@@ -1,8 +1,6 @@
 body {
 	font-family: "Comic Sans MS", cursive, sans-serif;
     background: url("images/fantasy_background.jpg");
-    height: 100%;
-    background-position: center;
     background-size: cover;
 	color: #fff;
 }
@@ -13,7 +11,7 @@ body {
 
 header.jumbotron {
     background: forestgreen;
-    background-opacity: .6;
+    opacity: .8;
 	border-radius: 24px;
 }
 
@@ -32,17 +30,14 @@ h1 {
   text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
   text-align: center;
   font-size: 150px;
+  opacity: 1;
+
 }
-	/* font-style: bold;
-	font-size: 22px;
-	position: relative;
-	letter-spacing: 8px;
-} */
 
 h3 {
 	padding-right: 10px;
     padding-bottom: 10px;
-    font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+    font: 400 40px/0.8 'Cookie', Helvetica, sans-serif;
     color: #fff;
     text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
 
@@ -65,7 +60,8 @@ h3 {
 
 
 input#animal-input {
-	color: #000;
+    color: #000;
+    background: forestgreen;
 }
 
 input#add-animal.btn,btn-deafult {

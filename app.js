@@ -1,7 +1,9 @@
 //Initial array of movies	
 $(document).ready(function() {
 
-    var topics = ["Deer", "Moose", "Black Bear", "Grizzly Bear", "Snails", "Squirrels", "Foxes", "Skunks", "Butterflies", "Spiders", "Marsupials", "Faeries", "Antelope", "Unicorns"];	
+    document.title = "Forest Creature Gifs!";
+
+    var topics = ["Deer", "Moose", "Black Bear", "Grizzly Bear", "Snail", "Squirrel", "Fox", "Skunk", "Butterfly", "Spider", "Marsupial", "Fairy", "Antelope", "Unicorn"];	
   
     //  create topics array buttons
     function renderButtons(){
@@ -23,12 +25,10 @@ $(document).ready(function() {
   
       //new variable will log the text data from each button
       var creatures = $(this).html(); 
-      // console.log(martialArts);
   
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + creatures + "&api_key=dc6zaTOxFJmzC&limit=10";
-      // console.log(queryURL);
   
-      // Creating an AJAX call for the specific movie button being clicked
+      // Creating an AJAX call for the specific animal button being clicked
       $.ajax({
         url: queryURL,
         method: "GET"
@@ -49,11 +49,6 @@ $(document).ready(function() {
                       $('#animal-view').prepend(gifImage);
                       gifImage.on('click', playGif);
   
-          // Pulling ratings for each movie
-          var rating = results[j].rating;
-              // console.log(rating);
-          var displayRated= $('<p>').text("Rating: " + rating);
-          $('#animal-view').prepend(displayRated);
     } // end for loop
   
   }); // done response
